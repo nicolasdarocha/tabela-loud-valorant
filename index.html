@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <title>Imersão Dev - Aula 06</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>BRASILEIRÃO</h1>
+
+      <button onclick="addPlayer()" class="addplayer">Add Player</button>
+      <button onclick="zerar()" class="zerar">Zerar Pontos</button>
+      <table class="table">
+        <thead> <!-- Cabeçalho = Onde colocar os títulos das colunas -->
+          <tr> <!--Define uma linha da tabela-->
+            <th>Nome </th> <!--Título de cada coluna-->
+            <th>Vitórias</th>
+            <th>Empates</th>
+            <th>Derrotas</th>
+            <th>Pontos</th>
+            <th colspan="3">Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tabelaJogadores">
+<!--          <tr>
+            <td>Paulo</td>
+            <td></td> /Define uma célula normal/
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button onClick="adicionarVitoria()">Vitória</button></td>
+            <td><button onClick="adicionarEmpate()">Empate</button></td>
+            <td><button onClick="adicionarDerrota()">Derrota</button></td>
+          </tr>-->
+        </tbody>
+      </table>
+
+      <div id='box' class='error'></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>
