@@ -1,3 +1,4 @@
+//add botao para remover jogador
 class criarJogador {
 nome
 vitorias
@@ -17,9 +18,11 @@ constructor (nome,vitorias,empates,derrotas,pontos) {
 // var gui = new criarJogador("Gui", 2, 0, 2, 0)
 
 var jogadores = [
-    new criarJogador("Rafa", 0, 0, 0, 0),
-    new criarJogador("Paulo", 0, 0, 0, 0),
-    new criarJogador("Gui", 0, 0, 0, 0)
+    new criarJogador("less", 0, 0, 0, 0),
+    new criarJogador("aspas", 0, 0, 0, 0),
+    new criarJogador("sacy", 0, 0, 0, 0),
+    new criarJogador("saadhak", 0, 0, 0, 0),
+    new criarJogador("pAncada", 0, 0, 0, 0)
 ]
 
 const box = document.getElementById('box')
@@ -96,19 +99,19 @@ function verificarVED() {
     if (somaVitorias > somaDerrotas ) {
         box.innerHTML = ''
         box.innerHTML = '<h3>Adicione uma derrota a um dos outros jogadores</h3>'
-        setTimeout(()=>{box.innerHTML = ''}, 10000)
+//        setTimeout(()=>{box.innerHTML = ''}, 10000)
         return
     }
     if (restoEmpates > 0 || somaEmpates == 1) {
         box.innerHTML = ''
         box.innerHTML = '<h3>Adicione um empate a um dos outros jogadores</h3>'
-        setTimeout(()=>{box.innerHTML = ''}, 10000)
+//        setTimeout(()=>{box.innerHTML = ''}, 10000)
         return
     } 
     if (somaDerrotas > somaVitorias) {
         box.innerHTML = ''
         box.innerHTML = '<h3>Adicione uma vitória a um dos outros jogadores</h3>'
-        setTimeout(()=>{box.innerHTML = ''}, 10000)
+//        setTimeout(()=>{box.innerHTML = ''}, 10000)
         return
     }}
 //    function erro() {box.innerHTML = '<h4>erro</h4>'} 
